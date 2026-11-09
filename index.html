@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Efe's Tailoring Studio</title>
+<link rel="stylesheet" href="styles.css">
+<!-- FACILITATOR DEMO PAGE for EE01 Live Session 2. Defects are seeded on purpose. Not a lab starter. -->
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">EFE'S TAILORING STUDIO</div>
+  <div class="menu">
+    <div class="menu-item" onclick="location.href='#services'">Services</div>
+    <div class="menu-item" onclick="location.href='#prices'">Prices</div>
+    <div class="menu-item" onclick="location.href='#book'">Book a fitting</div>
+  </div>
+</div>
+
+<div class="hero">
+  <h1 class="hero-title">Made to measure in Cape Coast</h1>
+  <div class="hero-sub">Kaba and slit, suits, school uniforms and alterations. Ready when we say it will be.</div>
+  <a href="#book" class="btn">Click here</a>
+</div>
+
+<div id="services">
+  <h2 class="section-title">Our services</h2>
+  <div class="card">
+    <p class="card-title">Kaba &amp; slit</p>
+    <p>Custom kaba and slit sewn from your own fabric or ours. Includes two fittings, hand-finished hems and a free adjustment within four weeks of collection if anything feels wrong.</p>
+    <p class="price-sale">This month: 10% off</p>
+  </div>
+  <div class="card">
+    <p class="card-title">Suits</p>
+    <p>Two- and three-piece suits for weddings, funerals and work, cut to your measurements.</p>
+    <ul class="services">
+      <li>Fabrics
+        <ul>
+          <li>Wool blends
+            <ul><li>Lightweight tropical wool for Cape Coast weather</li></ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="card">
+    <p class="card-title">Alterations</p>
+    <p>Hems, waists and zips while you wait, most jobs under an hour.</p>
+  </div>
+</div>
+
+<div id="prices">
+  <h2 class="section-title">Prices</h2>
+  <img src="price-list.png" alt="">
+  <p class="small-note">Prices shown are starting prices. Call for a quote.</p>
+</div>
+
+<div id="book">
+  <h2 class="section-title">Book a fitting</h2>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Phone" class="error">
+    <input type="text" placeholder="Preferred day">
+    <input type="button" value="Submit" class="btn-2">
+  </form>
+  <p class="form-help">Fields in red are required.</p>
+</div>
+
+<div class="footer">
+  <p>Efe's Tailoring Studio · Commercial Street, Cape Coast · <a href="#">click here</a> for directions</p>
+</div>
+</body>
+</html>

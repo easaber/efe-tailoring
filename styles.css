@@ -1,0 +1,23 @@
+/* Efe's Tailoring Studio – FACILITATOR DEMO. Defects are deliberate. */
+body { font-family: Georgia, serif; margin: 0; background: #eeeeee; color: #333; }
+.topbar { background: #1d3557; padding: 13px 17px; }
+.brand { color: #fff; font-size: 22px; letter-spacing: 3px; }
+.menu-item { display: inline-block; color: #cfd8e3; margin-right: 10px; cursor: pointer; }
+.hero { background: #e9c46a; padding: 22px 10px; }
+.hero-title { font-size: 30px; font-weight: bold; }
+.hero-sub { font-size: 0.9em; color: #787878; }
+.btn { display: inline-block; background: #2a9d8f !important; color: #fff; padding: 10px 17px; text-decoration: none; }
+.btn:hover { background: #21867a; }
+.btn-2 { background: #2a9d8f; color: white; border: 0; padding: 8px 13px; border-radius: 6px; }
+.section-title { font-size: 20px; font-weight: bold; margin: 22px 10px 13px; color: #888; }
+.card { background: #fff; margin: 10px; padding: 13px; height: 180px; overflow: hidden; }
+.card-title { font-weight: bold; font-size: 17px; color: #7a7a7a; }
+#services .card p { color: #777; font-size: 14px; }
+.price-sale { color: #c1121f; font-weight: bold; }
+.services li { font-size: 0.85em; }
+.small-note { font-size: 11px; color: #aaaaaa; margin: 10px; }
+form input { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
+.error { border-color: #e63946; }
+.form-help { color: #aaa; margin: 10px; }
+.footer { background: #1d3557; color: #9aa7b6; padding: 13px; font-size: 12px; }
+.footer a { color: #9aa7b6; }
