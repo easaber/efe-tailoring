@@ -36,3 +36,21 @@ function toggleSizeGuide() {
   const content = document.getElementById('sizeGuideContent');
   content.classList.toggle('open');
 }
+
+let savedGarments = [];
+
+function toggleSave(garment, btn) {
+  var index = savedGarments.indexOf(garment);
+
+  if (index === -1) {
+    savedGarments.push(garment);
+    btn.textContent = '♥';
+    btn.classList.add('saved');
+  } else {
+    savedGarments.splice(index, 1);
+    btn.textContent = '♡';
+    btn.classList.remove('saved');
+  }
+
+  document.getElementById('savedCount').textContent = savedGarments.length + ' saved';
+}

@@ -9,8 +9,11 @@ body { font-family: Georgia, serif; margin: 0; background: #eeeeee; color: #333;
 .btn:hover { background: #21867a; }
 .btn-2 { background: #2a9d8f; color: white; border: 0; padding: 8px 13px; border-radius: 6px; }
 .section-title { font-size: 20px; font-weight: bold; margin: 22px 10px 13px; color: #888; }
-.card { background: #fff; margin: 10px; padding: 13px; height: 180px; overflow: hidden; }
+.card { background: #fff; margin: 10px; padding: 13px; height: 180px; overflow: hidden; position: relative; }
 .card-title { font-weight: bold; font-size: 17px; color: #7a7a7a; }
+.heart-btn { position: absolute; top: 10px; right: 13px; background: none; border: 0; font-size: 20px; line-height: 1; color: #c1121f; cursor: pointer; padding: 0; }
+.heart-btn.saved { color: #e63946; }
+.saved-count { font-size: 0.6em; font-weight: normal; color: #aaa; margin-left: 10px; }
 #services .card p { color: #777; font-size: 14px; }
 .price-sale { color: #c1121f; font-weight: bold; }
 .services li { font-size: 0.85em; }

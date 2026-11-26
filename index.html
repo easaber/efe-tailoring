@@ -23,13 +23,15 @@
 </div>
 
 <div id="services">
-  <h2 class="section-title">Our services</h2>
+  <h2 class="section-title">Our services <span id="savedCount" class="saved-count">0 saved</span></h2>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('kaba', this)" aria-label="Save Kaba and slit">♡</button>
     <p class="card-title">Kaba &amp; slit</p>
     <p>Custom kaba and slit sewn from your own fabric or ours. Includes two fittings, hand-finished hems and a free adjustment within four weeks of collection if anything feels wrong.</p>
     <p class="price-sale">This month: 10% off</p>
   </div>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('suit', this)" aria-label="Save Suits">♡</button>
     <p class="card-title">Suits</p>
     <p>Two- and three-piece suits for weddings, funerals and work, cut to your measurements.</p>
     <ul class="services">
@@ -43,6 +45,7 @@
     </ul>
   </div>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('alteration', this)" aria-label="Save Alterations">♡</button>
     <p class="card-title">Alterations</p>
     <p>Hems, waists and zips while you wait, most jobs under an hour.</p>
   </div>
