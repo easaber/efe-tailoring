@@ -15,8 +15,10 @@ body { font-family: Georgia, serif; margin: 0; background: #eeeeee; color: #333;
 .price-sale { color: #c1121f; font-weight: bold; }
 .services li { font-size: 0.85em; }
 .small-note { font-size: 11px; color: #aaaaaa; margin: 10px; }
-form input { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
+form input, form select { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
 .error { border-color: #e63946; }
 .form-help { color: #aaa; margin: 10px; }
+.form-error { color: #c1121f; margin: 0 10px 10px; font-size: 0.85em; }
+.booking-confirm { color: #2a9d8f; font-weight: bold; margin: 10px; }
 .footer { background: #1d3557; color: #9aa7b6; padding: 13px; font-size: 12px; }
 .footer a { color: #9aa7b6; }

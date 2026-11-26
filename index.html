@@ -57,12 +57,19 @@
 <div id="book">
   <h2 class="section-title">Book a fitting</h2>
   <form>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Phone" class="error">
-    <input type="text" placeholder="Preferred day">
-    <input type="button" value="Submit" class="btn-2">
+    <select id="bookGarment">
+      <option value="kaba">Kaba &amp; slit</option>
+      <option value="suit">Suit</option>
+      <option value="alteration">Alteration</option>
+    </select>
+    <input type="text" id="bookName" placeholder="Name">
+    <input type="text" id="bookPhone" placeholder="Phone" class="error">
+    <input type="text" id="bookDay" placeholder="Preferred day">
+    <input type="button" value="Submit" class="btn-2" onclick="bookFitting()">
   </form>
   <p class="form-help">Fields in red are required.</p>
+  <p id="bookError" class="form-error"></p>
+  <div id="bookMessages"></div>
 </div>
 
 <div class="footer">
