@@ -14,6 +14,12 @@ body { font-family: Georgia, serif; margin: 0; background: #eeeeee; color: #333;
 #services .card p { color: #777; font-size: 14px; }
 .price-sale { color: #c1121f; font-weight: bold; }
 .services li { font-size: 0.85em; }
+.size-guide { margin: 10px; }
+.size-guide-toggle { background: #fff; padding: 10px 13px; font-weight: bold; cursor: pointer; }
+.size-guide-content { display: none; background: #fff; padding: 0 13px 13px; }
+.size-guide-content.open { display: block; }
+.size-table { border-collapse: collapse; width: 100%; }
+.size-table th, .size-table td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 0.85em; }
 .small-note { font-size: 11px; color: #aaaaaa; margin: 10px; }
 form input, form select { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
 .error { border-color: #e63946; }

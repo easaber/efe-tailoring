@@ -31,3 +31,8 @@ function bookFitting() {
     document.getElementById('bookMessages').appendChild(msg);
   });
 }
+
+function toggleSizeGuide() {
+  const content = document.getElementById('sizeGuideContent');
+  content.classList.toggle('open');
+}
