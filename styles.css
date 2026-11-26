@@ -9,14 +9,25 @@ body { font-family: Georgia, serif; margin: 0; background: #eeeeee; color: #333;
 .btn:hover { background: #21867a; }
 .btn-2 { background: #2a9d8f; color: white; border: 0; padding: 8px 13px; border-radius: 6px; }
 .section-title { font-size: 20px; font-weight: bold; margin: 22px 10px 13px; color: #888; }
-.card { background: #fff; margin: 10px; padding: 13px; height: 180px; overflow: hidden; }
+.card { background: #fff; margin: 10px; padding: 13px; height: 180px; overflow: hidden; position: relative; }
 .card-title { font-weight: bold; font-size: 17px; color: #7a7a7a; }
+.heart-btn { position: absolute; top: 10px; right: 13px; background: none; border: 0; font-size: 20px; line-height: 1; color: #c1121f; cursor: pointer; padding: 0; }
+.heart-btn.saved { color: #e63946; }
+.saved-count { font-size: 0.6em; font-weight: normal; color: #aaa; margin-left: 10px; }
 #services .card p { color: #777; font-size: 14px; }
 .price-sale { color: #c1121f; font-weight: bold; }
 .services li { font-size: 0.85em; }
+.size-guide { margin: 10px; }
+.size-guide-toggle { background: #fff; padding: 10px 13px; font-weight: bold; cursor: pointer; }
+.size-guide-content { display: none; background: #fff; padding: 0 13px 13px; }
+.size-guide-content.open { display: block; }
+.size-table { border-collapse: collapse; width: 100%; }
+.size-table th, .size-table td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 0.85em; }
 .small-note { font-size: 11px; color: #aaaaaa; margin: 10px; }
-form input { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
+form input, form select { margin: 7px 10px; padding: 9px; border: 1px solid #ccc; }
 .error { border-color: #e63946; }
 .form-help { color: #aaa; margin: 10px; }
+.form-error { color: #c1121f; margin: 0 10px 10px; font-size: 0.85em; }
+.booking-confirm { color: #2a9d8f; font-weight: bold; margin: 10px; }
 .footer { background: #1d3557; color: #9aa7b6; padding: 13px; font-size: 12px; }
 .footer a { color: #9aa7b6; }

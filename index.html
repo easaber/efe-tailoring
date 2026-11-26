@@ -23,13 +23,15 @@
 </div>
 
 <div id="services">
-  <h2 class="section-title">Our services</h2>
+  <h2 class="section-title">Our services <span id="savedCount" class="saved-count">0 saved</span></h2>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('kaba', this)" aria-label="Save Kaba and slit">♡</button>
     <p class="card-title">Kaba &amp; slit</p>
     <p>Custom kaba and slit sewn from your own fabric or ours. Includes two fittings, hand-finished hems and a free adjustment within four weeks of collection if anything feels wrong.</p>
     <p class="price-sale">This month: 10% off</p>
   </div>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('suit', this)" aria-label="Save Suits">♡</button>
     <p class="card-title">Suits</p>
     <p>Two- and three-piece suits for weddings, funerals and work, cut to your measurements.</p>
     <ul class="services">
@@ -43,8 +45,21 @@
     </ul>
   </div>
   <div class="card">
+    <button type="button" class="heart-btn" onclick="toggleSave('alteration', this)" aria-label="Save Alterations">♡</button>
     <p class="card-title">Alterations</p>
     <p>Hems, waists and zips while you wait, most jobs under an hour.</p>
+  </div>
+  <div class="size-guide">
+    <div class="size-guide-toggle" onclick="toggleSizeGuide()">Size guide ▾</div>
+    <div class="size-guide-content" id="sizeGuideContent">
+      <table class="size-table">
+        <tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th></tr>
+        <tr><td>S</td><td>36-38</td><td>30-32</td></tr>
+        <tr><td>M</td><td>39-41</td><td>33-35</td></tr>
+        <tr><td>L</td><td>42-44</td><td>36-38</td></tr>
+        <tr><td>XL</td><td>45-47</td><td>39-41</td></tr>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -57,16 +72,25 @@
 <div id="book">
   <h2 class="section-title">Book a fitting</h2>
   <form>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Phone" class="error">
-    <input type="text" placeholder="Preferred day">
-    <input type="button" value="Submit" class="btn-2">
+    <select id="bookGarment">
+      <option value="kaba">Kaba &amp; slit</option>
+      <option value="suit">Suit</option>
+      <option value="alteration">Alteration</option>
+    </select>
+    <input type="text" id="bookName" placeholder="Name">
+    <input type="text" id="bookPhone" placeholder="Phone" class="error">
+    <input type="text" id="bookDay" placeholder="Preferred day">
+    <input type="button" value="Submit" class="btn-2" onclick="bookFitting()">
   </form>
   <p class="form-help">Fields in red are required.</p>
+  <p id="bookError" class="form-error"></p>
+  <div id="bookMessages"></div>
 </div>
 
 <div class="footer">
   <p>Efe's Tailoring Studio · Commercial Street, Cape Coast · <a href="#">click here</a> for directions</p>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
